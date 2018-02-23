@@ -18,7 +18,9 @@
   <!-- In place of CSS -->
   <style>
     .jumbotron{
-      background: ##FF00FF;
+      background: url('/home/lincoln/Documents/Ping Pong/IMG_410667.jpg');
+      text-align: center;
+
     }
     body{
       font-family: Handlee;
@@ -30,12 +32,18 @@
     }
     .hey{
       color: purple;
+      text-align: center;
     }
 
     .cool{
       color: pink;
     }
 
+    .des{
+      height:50px;
+      width: 300px;
+      background:transparent;
+    }
   </style>
   <body>
   <!--   content in a container -->
@@ -52,8 +60,7 @@
           </section>
         </div>
     <div class="container">
-      <div class="kim">
-      <!-- jumbotron to style ping pong background -->
+          <!-- jumbotron to style ping pong background -->
       <div class="jumbotron">
          <h1 class="hey"><strong>Ping Pong</strong></h1>
          <!-- Instructions to the game -->
@@ -66,11 +73,10 @@
       <!--   input and submit button -->
         <form id="formEnter">
           <label></label>
-          <input type="text" id="submit">
-           <button id="onClick">Ping Pong</button>
+          <input class="des" type="text" id="submit">
+           <a href="#" id="onClick" class="btn btn-lg btn-primary">Ping Pong</a>
         </form>
       </div>
-    </div>
   </div>
 
     <!-- Optional JavaScript -->
