@@ -12,20 +12,30 @@
   </head>
   <style>
     .jumbotron{
-      background: #FF00FF;
+      background: ##FF00FF;
     }
   </style>
   <body>
+  <!--   content in a container -->
     <div class="container">
       <h1>Let's Play!</br><small>Rules</small></h1>
-      <p></p>
+      <!-- jumbotron to style ping pong background -->
       <div class="jumbotron">
          <h1>Ping Pong</h1>
-         <button id="onClick">Ping Pong</button>
-
+         <!-- Instructions to the game -->
+         <p>Ping Pong will count upto your number from 1 with the following exceptions:</p>
+         <p>
+          <li>Numbers divisible by 3 are replaced with "ping"</li>
+          <li>Numbers divisible by 5 are replaced with "pong"</li>
+          <li>Numbers divisible by 15 are replaced with "pingpong"</li>
+        </p>
+      <!--   input and submit button -->
+        <form id="formEnter">
+          <label></label>
+          <input type="text" id="submit">
+           <button id="onClick">Ping Pong</button>
+        </form>
       </div>
-     
-
     </div>
 
     <!-- Optional JavaScript -->
