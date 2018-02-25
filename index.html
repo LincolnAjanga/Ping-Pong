@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -18,9 +18,8 @@
   <!-- In place of CSS -->
   <style>
     .jumbotron{
-      background: url('/home/lincoln/Documents/Ping Pong/IMG_410667.jpg');
       text-align: center;
-      /*opacity: 0.5;
+     /* opacity: 0.5;
       filter: alpha(opacity=50);*/
 
     }
@@ -38,7 +37,8 @@
     }
 
     .cool{
-      color: pink;
+      color: #000;
+      font-size: 80px
     }
 
     .des{
@@ -55,7 +55,7 @@
             <div class="row">
                <div class="col-4 mx">
                    <img src="/home/lincoln/Documents/Ping Pong/1197512538_nv.png" class="img-fluid" alt="Responsive image">
-                      <h1 class="center"><strong>Let's Play!</strong></br><small class="cool">Rules</small></h1>
+                      <h1 class="center"><strong>Let's Play!</strong></h1>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@
     <div class="container">
           <!-- jumbotron to style ping pong background -->
       <div class="jumbotron">
-         <h1 class="hey"><strong>Ping Pong</strong></h1>
+         <h1 class="hey"><strong><small class="cool">Rules</small></br>Ping Pong</strong></h1>
          <!-- Instructions to the game -->
          <p>Ping Pong will count upto your number from 1 with the following exceptions:</p>
          <p>
@@ -74,9 +74,9 @@
         </p>
       <!--   input and submit button -->
         <form id="formEnter">
-          <label></label>
-          <input class="des" type="text" id="submit">
-           <a href="#" id="onClick" class="btn btn-lg btn-primary">Ping Pong</a>
+          <label for="pingpong"></label>
+          <input class="des" type="text" id="submit" placeholder="Enter your number">
+           <button id="onClick" class="btn btn-lg btn-primary" type="submit">Ping Pong</button>
         </form>
       </div>
   </div>
@@ -93,5 +93,6 @@
     <script src="http://cjode.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
+    <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
