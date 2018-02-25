@@ -53,10 +53,13 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		//get user input
-		var userInput = parseInt($("").val());
-        var result = pingPong(userInput);
-	})
+		var userInput = parseInt($("submit").val());
+        $("#append-list-arrays").empty();
+		var arrayResult = pingPong(userInput);
+  		$("#append-list-arrays").text(arrayResult);
+  });
+	});
 	
-})
+
 
 
