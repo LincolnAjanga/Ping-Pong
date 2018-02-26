@@ -24,7 +24,7 @@ $("#myform-item2").click(function(event) {
 		var userInput = parseInt($("#myform-item1").val());
 		$("#append-list-arrays").empty();
 		var resultOfArray = pingGeneratedArrays(userInput);
-  	$("#append-list-arrays").text(resultOfArray);
+  	$("#append-list-arrays").append('<li>' + resultOfArray[i]+'</li>');
   });
 });
 
