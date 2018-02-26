@@ -21,6 +21,6 @@ Jquery
 Setup and Installation
 
 Make sure you have you are on inernet with browser i.e chrome,chromium,mozilla,internet explorer e.t.c installed in your computer
-navigate to github you url and search my username:naimahassan
+navigate to github you url and search my username:Lincoln Ajanga
 go to my repositoy workplace download or clone my ping-pong project
 license MIT

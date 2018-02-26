@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ping-pong</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    <link rel="icon" href="/home/lincoln/Documents/Ping Pong/img/ping-pong.png">
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/waypoints.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="icon" href="/home/lincoln/Desktop/ping-pong/img/ping-pong.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <title>Ping Pong</title>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+
+    <!-- Latest compiled and minified JavaScript make sure to put jquery fast because the js is dependant on that-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   </head>
-  <!-- In place of CSS -->
-  <style>
-    .jumbotron{
-      text-align: center;
-     /* opacity: 0.5;
-      filter: alpha(opacity=50);*/
 
-    }
-    body{
-      font-family: Handlee;
-      background: url('/home/lincoln/Documents/Ping Pong/img/walt-disney-studios.jpg');
-    }
-    .center{
-      text-align: center;
-      color: #fff;
-    }
-    .hey{
-      color: purple;
-      text-align: center;
-    }
-
-    .cool{
-      color: #000;
-      font-size: 80px
-    }
-
-    .des{
-      height:50px;
-      width: 300px;
-      background:transparent;
-    }
-  </style>
   <body>
-  <!--   content in a container -->
-  <div class="content">
-        <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-          <div class="container">
-            <div class="row">
-               <div class="col-4 mx">
-                   <img src="/home/lincoln/Documents/Ping Pong/img/1197512538_nv.png" class="img-fluid" alt="Responsive image">
-                      <h1 class="center"><strong>Let's Play!</strong></h1>
+        <div class="content">
+                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
+                  <div class="container">
+                    <div class="row">
+                       <div class="col-4">
+                           <img src="/home/lincoln/Desktop/ping-pong/img/logo.png" class="img-fluid" alt="Responsive image">
+                              <h1 class="center"><strong></strong></h1>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </div>
+    <div class="container wow zoomIn data-wow-delay="1000ms" data-wow-duration="1s"">
+        <div class="jumbotron" id="background-header">
+            <div class="jubmbo-section-text">
+                <h1 class="align-center">Ping Pong</h1>
+                <p class="align-center">Your ultimate Ping Pong Game</p>
+            </div>
+            <div id="form-section">
+                <h3></h3>
+                <form>
+                    <input style="color:rgb(0, 0, 0);" type="text" id="myform-item1">
+                    <button type="submit" class="btn btn-primary btn-lg" id="myform-item2">play</button>
+                </form>
+            </div>
+            <div id="modal-section">
+          
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal" style="width:100px;">RULES</button>
+           <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                
+                <div class="modal-content" id="modal-color">
+                  <button type="button" class="close" data-dismiss="modal" id="x-button">&times;</button>
+                  <h3 class="modal-title" id="header-style">RULES</h3>
+                  <p class="" id="modal-para">Ping Pong will count up to your number starting from 1 with the following exceptions</p>
+                  <ol style="color:rgb(0, 0, 0);">
+                    <li>Numbers divisible by 3 are replaced with "ping"</li>
+                    <li>Numbers divisible by 5 are replaced by "pong"</li>
+                    <li>Numbers divisibel 15 are replaced by"pingpong"</li>
+                  </ol>
                 </div>
               </div>
-            </div>
-          </section>
-          <div class="content">
-        <section class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s">
-          <div class="container">
-            <div class="row">
-               <div class="col-4 mx">
-                    <div id="mymodal2" class="modal fade" role="dialog">
+            </div> 
+            &nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#mymodal2" style="width:100px;">about</button>
+            <div id="mymodal2" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content" id="modal-color">
-                        <p id="modal-para">developed by:Lincoln Ajanga</p>
-                        <p id="modal-para">github username/url:<a href="https://github.com/LincolnAjanga" id="github-link">Lincoln Ajanga</a></p>
-                        <p id="modal-para">by javascript</p>
+                        <button type="button" class="close" data-dismiss="modal" id="x-button">&times;</button>
+                        <h3 class="modal-title" id="header-style">ABOUT ME</h3>
+                        <p id="modal-para">Developed by:Lincoln Ajanga</p>
+                        <p id="modal-para">Github username/url:<a href="https://github.com/LincolnAjanga" id="github-link">LincolnAjanga</a></p>
+                        <p id="modal-para">by Javascript</p>
 
                     </div>
                 </div>
             </div> 
         </div>
-    <div class="container">
-          <!-- jumbotron to style ping pong background -->
-      <div class="jumbotron">
-         <h1 class="hey"><strong><small class="cool">Rules</small></br>Ping Pong</strong></h1>
-         <!-- Instructions to the game -->
-         <p>Ping Pong will count upto your number from 1 with the following exceptions:</p>
-         <p>
-          <li>Numbers divisible by 3 are replaced with "ping"</li>
-          <li>Numbers divisible by 5 are replaced with "pong"</li>
-          <li>Numbers divisible by 15 are replaced with "pingpong"</li>
-        </p>
-      <!--   input and submit button -->
-        <form id="formEnter">
-          <label for="pingpong"></label>
-          <input class="des" type="text" id="submit" placeholder="Enter your number">
-           <button id="onClick" class="btn btn-lg btn-primary" type="submit">Ping Pong</button>
-        </form>
-      </div>
         <div id="outcome-section">
           <ul id="append-list-arrays">
            
           </ul>
         </div>
-  </div>
+    </div>
+    
+  
 
-    <!-- Optional JavaScript -->
+    <!--custom js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+      <script type="text/javascript">new WOW().init();</script>
+       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -114,5 +114,6 @@
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
     <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+      
   </body>
 </html>
